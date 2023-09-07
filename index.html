@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>indd to epub markup cleaner by MJ LEE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="http://justchilling.co.kr/js/pretty_regex.js"></script>
+</head>
+
+<body>
+    <h1>indd to epub markup cleaner</h1>
+    <p>Paste the css from the epub file exported from InDesign into the text area below.</p>
+
+    <form class="form1">
+        <label for="text-input">Paste hrer ↓</label>
+        <textarea class="text" id="text-input"></textarea>
+        <button type="button" onclick="getTextAndReplace()">Cleaning up!</button>
+    </form>
+
+    <textarea class="text" id="result"></textarea>
+
+    <!-- temporary messages -->
+    <p><br /></p>
+    <p>The following properties are removed:</p>
+    <p><br /></p>
+    <p>- A color value of 000000</p>
+    <p>- the value is 0</p>
+    <p>- font-variant no matter what the value</p>
+    <p>- orphans with whatever value</p>
+    <p>- widows no matter what the value</p>
+    <p>- page-break no matter what value</p>
+    <p>- text-transform: none</p>
+    <p>- text-decoration: none</p>
+    <p>- serif -> 바탕, san-serif -> 고딕</p>
+    <p>Change unit from px to em.</p>
+    <p><br /></p>
+    <p>And I'm still testing. Step by step.</p>
+
+</body>
+
+</html>
