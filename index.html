@@ -14,12 +14,19 @@
     <p>Paste the css from the epub file exported from InDesign into the text area below.</p>
 
     <form class="form1">
+        <label for="cleaning-option">정리 옵션:</label>
+        <select class="menu" id="cleaning-option">
+            <option value="css">CSS</option>
+            <option value="html">HTML</option>
+        </select>
+
         <label for="text-input">Paste here ↓</label>
         <textarea class="text" id="text-input"></textarea>
         <button type="button" onclick="getTextAndReplace()">Cleaning up!</button>
-    </form>
 
-    <textarea class="text" id="result"></textarea>
+        <textarea class="text" id="result"></textarea>
+
+    </form>
 
     <!-- temporary messages -->
     <p><br /></p>
