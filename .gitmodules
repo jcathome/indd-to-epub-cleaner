@@ -1,3 +1,6 @@
 [submodule "indd-to-epub-regex"]
 	path = indd-to-epub-regex
 	url = https://github.com/jcathome/indd-to-epub-regex.git
+[submodule "regex_original"]
+	path = regex_original
+	url = https://github.com/jcathome/regex_original.git
