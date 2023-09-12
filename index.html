@@ -14,17 +14,17 @@
     <p>Paste the css from the epub file exported from InDesign into the text area below.</p>
 
     <form class="form1">
-        <label for="cleaning-option">정리 옵션:</label>
-        <select class="menu" id="cleaning-option">
+        <label for="cleaning-option">Please select a source</label>
+        <select class="menu" id="cleaning-option" onchange="showAlert()">
             <option value="css">CSS</option>
             <option value="html">HTML</option>
         </select>
 
-        <label for="text-input">Paste here ↓</label>
-        <textarea class="text" id="text-input"></textarea>
+        <label for="text-input" class="block">And paste your source here ↓</label>
+        <textarea class="textbox" id="text-input"></textarea>
         <button type="button" onclick="getTextAndReplace()">Cleaning up!</button>
 
-        <textarea class="text" id="result"></textarea>
+        <textarea class="textbox" id="result"></textarea>
 
     </form>
 
@@ -44,7 +44,7 @@
     <p>Change unit from px to em.</p>
     <p><br /></p>
     <p>And I'm still testing. Step by step.</p>
-
+    <p>The border-width value remains in px.</p>
 </body>
 
 </html>
