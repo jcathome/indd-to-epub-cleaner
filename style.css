@@ -7,7 +7,7 @@ body {
   padding: 1vw;
 }
 
-.text {
+.textbox {
   width: 400px;
   height: 300px;
   display: block;
@@ -16,4 +16,8 @@ body {
 .form1 {
   margin-bottom: 1em;
   margin-top: 1em;
+}
+
+.block {
+  display: block;
 }/*# sourceMappingURL=style.css.map */
